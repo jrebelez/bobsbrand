@@ -1,11 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
-import Main from './Components/MainComponent';
+import Navbar from './Components/Navbar';
 import './App.css';
 
 function App() {
   return (
-    < Main />
+    <Navbar/>
   );
 }
 
