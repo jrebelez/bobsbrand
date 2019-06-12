@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
-import Navbar from './Components/Navbar';
-import Home from './Components/Home';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import Navbar from './Components/Navbar'
+import Home from './Components/Home'
 import './App.css';
 
 class App extends Component {
@@ -13,7 +13,7 @@ class App extends Component {
               <Navbar/>
                 <Switch>
                     <Route exact path="/" component={Home}/>
-                   
+                 
                   </Switch>
              </div>
        </BrowserRouter>

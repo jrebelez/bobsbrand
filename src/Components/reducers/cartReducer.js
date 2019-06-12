@@ -19,7 +19,7 @@ const initState = {
     total: 0
 
 }
-const cartReducer= (state = initState,action)=>{
-
+const cartReducer = (state = initState,action)=>{
+  return state;
 }
 export default cartReducer;
