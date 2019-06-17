@@ -15,7 +15,7 @@ class Home extends Component{
                     <div className="card" style={{width: "22rem"}} key={item.id}>
                     <div>
                     <img className="card-img-top" src={item.img} alt={item.title}/>
-                    <span className="card-title">{item.title} </span>
+                    <h3 className="card-title">{item.title} </h3>
                     
                     </div>
 
