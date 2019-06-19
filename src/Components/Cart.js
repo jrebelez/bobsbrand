@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import {Link } from 'react-router-dom';
 import { removeItem,addQuantity,subtractQuantity } from './redux/actions/cartActions';
 
+
 class Cart extends Component {
 
     handleRemove = (id)=> {
@@ -33,8 +34,8 @@ class Cart extends Component {
                                             <b>Quantity: {item.quantity}</b> 
                                         </p>
                                         <div className="add-remove">
-                                            <Link to="/cart"><i className="material-icons" onClick={()=>{this.handleAddQuantity(item.id)}}>arrow_drop_up</i></Link>
-                                            <Link to="/cart"><i className="material-icons" onClick={()=>{this.handleSubtractQuantity(item.id)}}>arrow_drop_down</i></Link>
+                                            <Link to="/cart"><i className="fa fa-sort-up" onClick={()=>{this.handleAddQuantity(item.id)}}></i></Link>
+                                            <Link to="/cart"><i className="fa fa-sort-down" onClick={()=>{this.handleSubtractQuantity(item.id)}}></i></Link>
                                         </div>   
                                         <button className="btn btn-primary " onClick={()=>{this.handleRemove(item.id)}}>Remove</button>        
                          </div>
@@ -42,6 +43,7 @@ class Cart extends Component {
                                    
         
                 </li>
+               
 
                )
            })
@@ -58,7 +60,9 @@ class Cart extends Component {
                 <ul className="list-unstyled" >
                     {addedItems}
                 </ul>
-            </div>  
+                <b>Total: {this.props.total} $</b>
+            </div> 
+            
         </div>
    )
      
@@ -69,7 +73,9 @@ class Cart extends Component {
 }
 const mapStateToProps = (state)=>{
     return{
-        items: state.addedItems
+        items: state.addedItems,
+        addedItems: state.addedItems,
+        total: state.total
     }
 }
 
