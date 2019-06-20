@@ -9,12 +9,12 @@ import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY} from '../../redux/ac
 
 const initState = {
     items: [
-        {id:1,title:'Woof Hoodie', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:110,img:Item1},
-        {id:2,title:'Sup T-Shirt', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:80,img: Item2},
-        {id:3,title:'Jordans', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:120,img: Item3},
-        {id:4,title:'Adidas pants', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:260,img:Item4},
-        {id:5,title:'Canada Goose', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:160,img: Item5},
-        {id:6,title:'Levi Jeans', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:90,img: Item6}
+        {id:1,title:'Woof Hoodie', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:100,img:Item1},
+        {id:2,title:'Sup T-Shirt', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:50,img: Item2},
+        {id:3,title:'Jordans', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:250,img: Item3},
+        {id:4,title:'Adidas pants', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:70,img:Item4},
+        {id:5,title:'Canada Goose', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:800,img: Item5},
+        {id:6,title:'Levi Jeans', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:55,img: Item6}
     ],
     addedItems:[],
     total: 0

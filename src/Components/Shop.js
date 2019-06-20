@@ -32,7 +32,7 @@ class Shop extends Component{
             
             return(
                 <div className="container">
-                <h3 className="center-block"> Our Products </h3>
+                <h3 className="center-block"> Fall Collection </h3>
                 <div className="row">
                 
                     {itemList}

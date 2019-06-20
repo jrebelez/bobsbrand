@@ -26,7 +26,7 @@ import {
     render() {
       return (
         <div>
-          <Navbar color="light" light expand="md">
+          <Navbar style={{backgroundColor: 'white'}} expand="md">
           <Link to="/" > <img src={logo} width="100px" height="auto" alt="bobsbrand"/></Link>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
